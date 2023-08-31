@@ -10,14 +10,13 @@ import javax.mail.internet.MimeMessage;
 @Service
 public class GmailSender {
     private final JavaMailSender sender;
-    public void init(){
+    public void emailSender(String email){
             MimeMessage message = sender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message);
-
             try {
-                helper.setTo("dosyafree32@gmail.com");
-                helper.setSubject("Тема письма");
-                helper.setText("Привет, это тестовое письмо!");
+                helper.setTo(email);
+                helper.setSubject("Theme for letter");
+                helper.setText("Hi bro, this just test!");
             } catch (Exception e) {
                 e.printStackTrace();
             }

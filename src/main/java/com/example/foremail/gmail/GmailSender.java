@@ -20,7 +20,6 @@ public class GmailSender {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
             sender.send(message);
     }
 }

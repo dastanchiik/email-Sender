@@ -1,6 +1,7 @@
 package com.example.foremail.gmail;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.mail.javamail.JavaMailSender;
 
 import org.springframework.mail.javamail.MimeMessageHelper;
